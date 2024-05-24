@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Translator</title>
+    <style>
+        #container {
+            display: grid;
+            width: 30vw;
+            margin: auto;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #4ce2c2;
+        }
+        #fields{
+            width: 25vw;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+        #translation {
+            font-size: 1.3rem;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
+    <div id="container">
+        <h1 id="project"></h1>
+        <h2 id="student"></h2>
+        <p id="drections"></p>
+        <ul>
+            <li>Dutch</li>
+            <li>French</li>
+            <li>German</li>
+        </ul>
+        <div id="fields">
+            <input id="lang" type="text" size="50" placeholder="Enter the language you want to learn...">
+            <button id="check">Check Language</button>
+            <button type="reset" id="resetAll" value="reset">Reset</button>
+            <p id="translation"></p>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
